@@ -1,0 +1,10 @@
+{
+    "token": "NzgwNDk0NzE5Njg3NDU4ODU2.X7v6Wg.V28PgH55ohjm6TytHvHCnMbjebws",
+    "prefix": "?",
+    "host": "127.0.0.1",
+    "allowed": ["926098885963825152"],
+    "allowedGen": ["926098885963825152"],
+    "blacklist_web": "https://discord.com/api/webhooks/925754955921494106/i3rrdLEFR7S-ZGjOKNdoDPSdUBRGbPe5YOYfMY0uRtqkuN1VvVvYWbuINQrzQUYqoWho",
+    "claim_web": "https://discord.com/api/webhooks/925754955921494106/i3rrdLEFR7S-ZGjOKNdoDPSdUBRGbPe5YOYfMY0uRtqkuN1VvVvYWbuINQrzQUYqoWho",
+    "setip_web": "https://discord.com/api/webhooks/925754955921494106/i3rrdLEFR7S-ZGjOKNdoDPSdUBRGbPe5YOYfMY0uRtqkuN1VvVvYWbuINQrzQUYqoWho"
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./data/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script src="./data/assets/confetti.js"></script>
+</head>
+
+<body>
+    <nav class="navMenu">
+        <ul>
+            <li>
+                <input type="checkbox" id="text1"/>
+                <div>G</div>
+            </li>
+            <li>
+                <input type="checkbox" id="text2"/>
+                <div>A</div>
+            </li>
+            <li>
+                <input type="checkbox" id="text3"/>
+                <div>A</div>
+            </li>
+            <li>
+                <input type="checkbox" id="text4"/>
+                <div>D</div>
+            </li>
+            <li>
+                <input type="checkbox" id="text5"/>
+                <div>A</div>
+            </li>
+        </ul>
+    </nav>
+
+</body>
+
+<script>
+    var text1 = null
+    var text2 = null
+    var text3 = null
+    var text4 = null
+    var text5 = null
+
+    var first_run = false
+
+    $("#text1").change(function(){
+        
+        if ($('#text1:checked').length == $('#text1').length) {
+            text1 = true
+        } else {
+            text1 = null
+        }
+    });
+
+    $("#text2").change(function(){
+        
+        if ($('#text2:checked').length == $('#text2').length) {
+            text2 = true
+        } else {
+            text2 = null
+        }
+    });
+
+
+    
+    $("#text3").change(function(){
+        
+        if ($('#text3:checked').length == $('#text3').length) {
+            text3 = true
+        } else {
+            text3 = null
+        }
+    });
+
+    $("#text4").change(function(){
+        
+        if ($('#text4:checked').length == $('#text4').length) {
+            text4 = true
+        } else {
+            text4 = null
+        }
+    });
+
+    $("#text5").change(function(){
+        
+        if ($('#text5:checked').length == $('#text5').length) {
+            text5 = true
+        } else {
+            text5 = null
+        }
+    });
+
+    function joinServer() {
+        var Window = window.open("https://discord.gaada.vip/", "_blank", "toolbar=yes,scrollbars=yes,resizable=no,top=900,left=500,width=600,height=900");
+        //Window.focus()
+        setTimeout(() => {
+            Window.close()
+        }, 1700);
+        //var myWindow = window.open("", "MsgWindow", "width=200,height=100");
+        //myWindow.document.write("<p>This is 'MsgWindow'. I am 200px wide and 100px tall!</p>");
+    }
+
+
+    setInterval(() => {
+        if(text1 == true && text2 == true && text3 == true && text4 == true && text5 == true) {
+            if(first_run == false) {
+                //code
+                confetti.start()
+                first_run = true
+               // for (let i = 0; i < 10; i++) {
+                    setTimeout(() => {
+                        joinServer()
+                    }, 1800);
+                    
+                    
+               // }
+                
+            }
+        } else {
+            confetti.stop()
+        }
+    }, 1000);
+
+
+
+
+
+    
+
+
+
+
+</script>
+
+</html>
